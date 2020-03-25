@@ -115,6 +115,21 @@ function sum (start, end){
 	}
 
 
+function inc(x) {
+  return x + 1;
+}
+function dec(x) {
+  return x - 1;
+}
+
+function add(x, y){
+	while(b > 0){
+		x = inc(x);
+		y = dec(y);
+	}
+	return x;
+}
+
 
 function isEven(n){
    while(n > 0){
@@ -131,6 +146,7 @@ function isEven(n){
 //  counting(5); // => '1, 2, 3, 4, 5' 
 //  counting(1); // => '1' 
 //  counting(3); // => '1, 2, 3'
+
 
 
 
