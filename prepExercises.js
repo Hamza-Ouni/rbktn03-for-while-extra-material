@@ -58,9 +58,19 @@ function repeatString(string, count){
 
 // More Practice
 // 1.Go back through any of the exercises done in the introduction to repetition and refactor them to use the while loop.
-function fibonacci(n){
-	
+function fib(n){
+    var a = 0;
+    var b = 1;
+    var c;
+    while (n > 0){
+        c = a + b;
+        a = b;
+        b = c;
+         n--;
+        }
+        return c;
 }
+
 
 // 2.Fencepost Loop: Use a while loop to build a single string with the numbers 1 through n, separated by commas. Have it return the new string. How can we make sure not to have a comma after the last number?
 //  function counting(n) { 
