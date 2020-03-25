@@ -25,7 +25,7 @@ function sum (n){
 //  factorial(4); // => 24 
 //  factorial(5); // => 120
 function factorial (n){
- var result = 1;
+	var result = 1;
 	while (n > 1){
 		result = result * n;
 		n--;
@@ -71,6 +71,58 @@ function fib(n){
         return c;
 }
 
+function multiplyBy10(number, n){
+	var a =10;
+	while (n > 0){
+		number = a * number;
+		n--;
+	}
+	return number;
+}
+
+function sum (start, end){
+	var result = 0;
+	while(start < end){
+		result = result + start;
+		start++ ;
+	}
+	return start;
+}
+
+function sum (start, end){
+	var result = 0;
+	while(start <= end){
+		result = result + start;
+		start++ ;
+	}
+	return result;
+}
+
+	function product(start, end){
+		var result = 1;
+		while(start <= end){
+			result = result * start;
+			start++ ;
+		}
+		return result;
+	}
+
+
+function inc(x) {
+  return x + 1;
+}
+function dec(x) {
+  return x - 1;
+}
+
+function add(x,y){
+
+	while (y > 0){
+		inc(x);
+		dec(y);
+	}
+	return x;
+}
 
 // 2.Fencepost Loop: Use a while loop to build a single string with the numbers 1 through n, separated by commas. Have it return the new string. How can we make sure not to have a comma after the last number?
 //  function counting(n) { 
