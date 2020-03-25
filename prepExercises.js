@@ -7,7 +7,14 @@
 //  sum(3); // => 6 
 //  sum(4); // => 10 
 //  sum(5); // => 15
-
+function sum (n){
+	var result = 0;
+	while (n > 0){
+		result = result + n;
+		n--;
+	}
+	return result;
+}
 
 
 // 2.Factorial of n: The factorial of n is the product of all the integers preceding n, starting with 1, e.g.:
@@ -17,7 +24,14 @@
 //  factorial(3); // => 6 
 //  factorial(4); // => 24 
 //  factorial(5); // => 120
-
+function factorial (n){
+ var result = 1;
+	while (n > 1){
+		result = result * n;
+		n--;
+	 } 
+ 	return result;
+}
 
 
 // 3.Repeating a String n Times: Let's write a function called repeatString that takes two parameters: a string str, which is the string to be repeated, and count -- a number representing how many times the string s should be repeated, e.g.
@@ -30,12 +44,23 @@
 //  repeatString('dog', 3); // => 'dogdogdog'
 // Your task is to implement the repeatString function using a while loop.
 
-
+function repeatString(string, count){
+	var str = "";
+	while (count > 0){
+		
+		str = str + string ;
+		count --;
+	
+	}
+	return str;
+}
 
 
 // More Practice
 // 1.Go back through any of the exercises done in the introduction to repetition and refactor them to use the while loop.
-
+function fibonacci(n){
+	
+}
 
 // 2.Fencepost Loop: Use a while loop to build a single string with the numbers 1 through n, separated by commas. Have it return the new string. How can we make sure not to have a comma after the last number?
 //  function counting(n) { 
