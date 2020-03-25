@@ -147,9 +147,16 @@ function isEven(n){
 //  counting(1); // => '1' 
 //  counting(3); // => '1, 2, 3'
 
-
-
-
+function counting(n){
+   var string1 = "1";
+   var i =2;
+   var string2="";
+	while (i <= n){
+		string2 = string2 + "," + " " + i;
+		i++;
+    }
+    return string1 + string2 ;
+}
 
 // 3.Meet & Greet: n numbers are coming to a party for numbers. Introduce them each to all the guests as they arrive. You should end up with output looking something like this one for n = 5:
 //  welcome 1 
