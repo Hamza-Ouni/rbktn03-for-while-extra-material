@@ -118,7 +118,15 @@ function evenLengthWords(array){
 }
 // Advanced
 // 1.Read about the join method on MDN and use it to implement a function that accepts a string as an argument and returns that string reversed
-
+function reverse(string){
+	var array = string.split("");
+	var arr = [];
+		for (var i = array.length-1 ; i >= 0 ; i--){
+			arr.push(array[i]);
+			array.pop();
+		}
+	return arr.join("");
+}
 // 2.Write a function keep that 'keeps' certain elements in an array. The function will need to take two arguments, an array, and something else -- the second argument will be what is used to determine which elements to keep.
 
 // You should be able to use this function to write evens, evenLengthWords, a hypothetical odds function, or oddLengthWords without changing the keep function.
