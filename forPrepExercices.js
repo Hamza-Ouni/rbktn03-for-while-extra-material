@@ -27,19 +27,61 @@ function max(array){
 //  '1,2,3,4,5,6'.split(',')
 // What is returned by split (You can read more about it here (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) and how does it work?
 //  Use split to write a function longestWord that takes a string as an argument and returns the longest word.
-function 
+function longestWord (string){
+var array =string.split(" ");
+         var x =array[0];
+
+	for (var i = 1 ; i < array.length ; i++){
+		if (x.length < array[i].length){
+			x=array[i];
+		}
+    }
+		return x;
+	}
+
 // 4.Write a function remove that accepts an array and an element, and returns an array with all ocurrences of element removed.
 
-// function remove(array, element) {
-//  // your code here
-//  }
+function remove(array, element) {
+;
+    var newarray = [];
+ 	for ( var i = 0 ; i < array.length ; i++){
+ 		if (array[i] !== element){
+ 		newarray.push(array[i]);
+ 		}
+ 	}
+ 	 		return newarray;
+  }
 //  remove([1, 3, 6, 2, 3], 3); // => [1, 6, 2]
 // 5.Write a function evens that accepts an array as an argument, and returns an array consisting of all of the even numbers in that array.
-
+function evens(array){
+var newarray = [];
+	for (var i = 0 ; i < array.length ; i++){
+		if (array[i] % 2 === 0){
+			newarray.push(array[i]);
+		}
+	}
+	return newarray;
+}
 // More Practice
 // 1.Write a function called average that takes an array of numbers as a parameter and returns the average of those numbers.
+function average(array){
+  var result =0;
+	for (var i = 0 ; i < array.length ; i++ ){
+        result = result + array[i]
+	}
+	return result / 2;
+}
 
 // 2. Write a function called min that finds the smallest number in an array of numbers.
+function min (array){
+  var min = array[0];
+	for ( var i = 0 ; i < array.length ; i++){
+         if (min > array[i]){
+         	min = array[i];
+         }
+	}
+	return min ;
+}
 
 // 3.Write a function shortestWord that works like longestWord, but returns the shortest word instead.
 
