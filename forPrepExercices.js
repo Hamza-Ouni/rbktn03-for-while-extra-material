@@ -18,7 +18,7 @@ function max(array){
          }
          return array[i]
 	}
-}
+
 // 3.Try the following at a console:
 
 //  'the quick brown fox jumped over the lazy dog'.split(' ');
