@@ -12,13 +12,14 @@ function sum(array){
 // 2.Write a function max that accepts an array of numbers and returns the largest number in the array.
 function max(array){
 	var x = array[0];
-	  for (var i = 1 ; i< array.length ; i++){
-         if (x > array[i]){
-         	return x;
+	  for (var i = 0 ; i< array.length-1 ; i++){
+         if (x < array[i]){
+         	 x = array[i];
          }
-         return array[i]
-	}
-
+      }
+          return x;
+      
+}
 // 3.Try the following at a console:
 
 //  'the quick brown fox jumped over the lazy dog'.split(' ');
@@ -26,6 +27,7 @@ function max(array){
 //  '1,2,3,4,5,6'.split(',')
 // What is returned by split (You can read more about it here (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) and how does it work?
 //  Use split to write a function longestWord that takes a string as an argument and returns the longest word.
+function 
 // 4.Write a function remove that accepts an array and an element, and returns an array with all ocurrences of element removed.
 
 // function remove(array, element) {
